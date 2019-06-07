@@ -1,0 +1,23 @@
+<h1>Get A Random Dog Image!</h1>
+
+<!-- <form [formGroup]="messageForm" (ngSubmit)="onSubmit(messageForm.controls.breed.value)">
+    <label>
+        Enter a dog breed:
+        <input type="text" formControlName="breed">
+        <div *ngIf="submitted && messageForm.controls.breed.errors" class="error">
+          <div *ngIf="messageForm.controls.breed.errors.required">Sorry, try another breed!</div> 
+        </div>
+      </label>
+
+      <input type="submit" value="Show Dog Picture!" class="cta">
+</form>
+
+<div *ngIf='success'>
+    {{ messageForm.controls.breed.value }}
+    <img [src]="dogURL">
+</div> -->
+<button (click)="onClickGetDog()">Click me to get a dog!</button>
+<br/>
+<ul *ngIf="dogURL">
+    <img height=500 [src]="dogURL">
+</ul>

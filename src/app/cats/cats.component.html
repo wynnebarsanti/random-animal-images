@@ -1,0 +1,7 @@
+<h1>Get a Random Cat Photo!</h1>
+
+<button (click)="onClickGetCat()">Click me to get a cat!</button>
+<br/>
+<ul *ngIf="catURL">
+    <img height=500 [src]="catURL">
+</ul>
