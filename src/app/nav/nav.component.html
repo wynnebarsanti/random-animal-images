@@ -7,7 +7,7 @@
           <li><a routerLink="/dogs">Dog Pictures</a></li>
           <li><a routerLink="/cats">Cat Pictures</a></li>
           <li  *ngIf="authService.isLoggedIn" class="nav-item">
-              <a class="nav-link"  (click)="authService.logout()"><a routerLink="/login">Log Out</a></a>
+              <a routerLink="/login" class="nav-link"  (click)="authService.logout()">Log Out</a>
           </li>
         </ul>
       </nav>

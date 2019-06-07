@@ -13,8 +13,12 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { LoginComponent } from './login/login.component';
 
+import { environment } from '../environments/environment';
+
+const FIREBASE_APIKEY = environment.api_key;
+
 var config = {
-  apiKey: "AIzaSyAmME8RB3aTFcGjVFy79QKZD1Zv91LJ2WY",
+  apiKey: FIREBASE_APIKEY,
   authDomain: "image-searcher-ee95b.firebaseapp.com",
   databaseURL: "https://image-searcher-ee95b.firebaseio.com",
   projectId: "image-searcher-ee95b",
